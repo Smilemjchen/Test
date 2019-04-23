@@ -1,0 +1,20 @@
+server:
+  port: 9900
+  
+spring:
+  application:
+    name: configtest
+    
+  datesource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: ming123
+    driver-class-name: com.mysql.jdbc.Driver
+    
+  jpa:
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
